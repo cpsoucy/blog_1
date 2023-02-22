@@ -18,7 +18,7 @@ After that, you want to create all the directories (folders) you need, like so:
 The "`cd ..`" at the end navigates you back to the starting directory automatically, so you don't have to do it manually.
 
 Next, use the **touch** command to create the two files you will need:  
-`touch index.html`
+`touch index.html`  
 `touch styles/style.css`  
 
 After this, you can use the **echo** command to run the *index.html* & *style.css* from within the bash script:
