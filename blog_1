@@ -1,0 +1,34 @@
+#!/bin/bash
+
+mkdir new-project
+cd new-project
+mkdir images scripts styles site
+cd site
+mkdir pages posts comments
+cd ..
+
+touch index.html
+touch styles/style.css
+
+echo '<!DOCTYPE html>' > index.html
+echo '<html>' >> index.html
+echo '<head>' >> index.html
+echo '  <meta charset="utf-8">' >> index.html
+echo '  <meta name="viewport" content="width=device-width, initial-scale=1.0">' >> index.html
+echo '  <link rel="stylesheet" href="styles/style.css" media="screen" type="text/css">' >> index.html
+echo '</head>' >> index.html
+echo '<body>' >> index.html
+echo '   <h1>If this is red, CSS is working.</h1>' >> index.html
+echo '   <h2 id="blue_heading" onclick="changeHeadingColor()">If this is blue after clicked, JavaScript is working.</h2>' >> index.html
+echo '   <script>' >> index.html
+echo '     function changeHeadingColor() {' >> index.html
+echo '       var heading = document.getElementById("blue_heading");' >> index.html
+echo '       heading.style.color = "blue";' >> index.html
+echo '     }' >> index.html
+echo '   </script>' >> index.html
+echo '</body>' >> index.html
+echo '</html>' >> index.html
+
+echo 'h1 { color: red; }' > styles/style.css
+
+xdg-open C:/Users/cpsou/OneDrive/Documents/GitHub/blog_1/new-project/site/index.html

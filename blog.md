@@ -1,5 +1,5 @@
-# header 1
-## header 2
+# How to create a bash script that provides boilerplate code
+## 
 ### header 3
 
 **bold**
@@ -8,4 +8,6 @@
 2. 2
 3. 3
 
-'here is my code'
+'code'
+
+<a href="">Click to see bash script in action<a>
